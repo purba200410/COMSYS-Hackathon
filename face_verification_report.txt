@@ -1,0 +1,29 @@
+COMSYS Hackathon – Task B Evaluation Report
+===========================================
+
+Model: Face Verification using CNN + Cosine Similarity
+Date Evaluated: June 30, 2025
+
+Validation Dataset: Task_B/val/
+Embedding Model: CNN with 3 Conv2D layers + Linear(128x56x56 → 256)
+Classifier Head: Linear(512 → 256 → 1)
+Distance Metric: Cosine Similarity
+
+Threshold used: 0.6
+
+Evaluation Metrics
+------------------
+✅ Accuracy  : 0.9262
+✅ Precision : 0.9310
+✅ Recall    : 0.9215
+✅ F1-score  : 0.9262
+
+Notes:
+- 470 image pairs were generated for training
+- Clean reference image used per identity folder
+- Distorted images tested against reference for verification
+
+No large files (.pth, datasets) are included in the repo due to GitHub size limits.
+
+Prepared by: Purba Dey
+GitHub: https://github.com/purba200410/COMSYS-Hackathon
